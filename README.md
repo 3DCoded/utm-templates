@@ -4,4 +4,4 @@
 
 ## Usage
 
-Download the app and drag the app in the DMG to your applications folder.
+Download the app from releases and drag the app in the DMG to your applications folder.
