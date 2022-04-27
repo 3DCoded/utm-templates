@@ -1,0 +1,16 @@
+name: Build
+on: [push]
+jobs:
+  Organize-Saints:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: compile and bundle dmg
+        run: |
+          xcodebuild -target UTM\ Templates -project UTM\ Templates.xcodeproj CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          hdiutil create UTMTemplates-uncompressed.dmg -volname "UTM Templates" -srcfolder ./build/Release/UTM\ Templates.app
+          hdiutil convert UTMTemplates-uncompressed.dmg -format UDZO -o UTM\ Templates.dmg
+      - uses: actions/upload-artifact@v2
+        with:
+          name: UTM Templates.dmg
+          path: UTM Templates.dmg
