@@ -13,23 +13,13 @@ struct MainView: View {
     @Environment(\.openURL) var openURL
     
     var body: some View {
-        //            Button(action: {
-        //                if let url = URL(string: "utm://downloadVM?url=http://google.com") {
-        //                    NSWorkspace.shared.open(url)
-        //                }
-        //                else {
-        //                    print("INVALID")
-        //                }
-        //            }) {
-        //                Text("Hello, World!")
-        //            }
         NavigationView {
             List {
                 NavigationLink(destination: HomeView()) {
                     Label("Home", systemImage: "house")
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "Windows 10", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElidHBEQV8tVmk4NlJhTmc_ZT1nZFFiUlo/root/content", attributes: [
+                    DetailView(title: "Windows 10", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElidHBEQV8tVmk4NlJhTmc_ZT1nZFFiUlo/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Password", value: "windows"),
@@ -45,7 +35,7 @@ struct MainView: View {
                     }
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "Windows 11", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEljZVR2RTN0WTB2eUdVWFE_ZT1MOGFmMEk/root/content", attributes: [
+                    DetailView(title: "Windows 11", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEljZVR2RTN0WTB2eUdVWFE_ZT1MOGFmMEk/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Password", value: "windows"),
@@ -60,7 +50,7 @@ struct MainView: View {
                     
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "macOS 12", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElmU29IeXczbmRKZEFGQlE_ZT0xNmFia1c/root/content", attributes: [
+                    DetailView(title: "macOS 12", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElmU29IeXczbmRKZEFGQlE_ZT0xNmFia1c/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Password", value: "macos"),
@@ -74,7 +64,7 @@ struct MainView: View {
                     Text("macOS 12")
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "Ubuntu Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElkTmhWQ0ZmZzV3aFpiSVE_ZT1NVGdXUlA/root/content", attributes: [
+                    DetailView(title: "Ubuntu Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElkTmhWQ0ZmZzV3aFpiSVE_ZT1NVGdXUlA/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Username", value: "ubuntu"),
@@ -89,7 +79,7 @@ struct MainView: View {
                     Text("Ubuntu Linux")
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "Fedora Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEllVmM0NUFHSkdRdkZKTnc_ZT10cmZEOVk/root/content", attributes: [
+                    DetailView(title: "Fedora Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEllVmM0NUFHSkdRdkZKTnc_ZT10cmZEOVk/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Username", value: "fedora"),
@@ -104,7 +94,7 @@ struct MainView: View {
                     Text("Fedora Linux")
                 }
                 NavigationLink(destination: {
-                    DetailView(title: "OpenSUSE Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEloZUxCUlV6d09ZdTRJbnc_ZT1Ea3hORG0/root/content", attributes: [
+                    DetailView(title: "OpenSUSE Linux", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdEloZUxCUlV6d09ZdTRJbnc_ZT1Ea3hORG0/root", attributes: [
                         VMAttribute(key: "Memory", value: "8GB"),
                         VMAttribute(key: "Disk", value: "64GB"),
                         VMAttribute(key: "Username", value: "opensuse"),
