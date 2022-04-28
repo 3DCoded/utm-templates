@@ -1,7 +1,7 @@
 name: Pull
-on: [pull]
+on: [pull_request]
 jobs:
-  Build:
+  Pull:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
