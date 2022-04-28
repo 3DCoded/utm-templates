@@ -3,8 +3,8 @@
     <channel>
         <title>UTM Templates</title>
         <item>
-            <title>1.1.0-alpha1</title>
-            <sparkle:channel>alpha</sparkle:channel>
+            <title>1.1.0-beta1</title>
+            <sparkle:channel>beta</sparkle:channel>
             <pubDate>Thu, 28 Apr 2022 3:54:44 -0500</pubDate>
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
