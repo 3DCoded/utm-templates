@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68BA2030281B23A2004A6933 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 68BA202F281B23A2004A6933 /* Sparkle */; };
 		68BD3F8727EDD91C00676EA7 /* UTM_TemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */; };
 		68BD3F8927EDD91C00676EA7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8827EDD91C00676EA7 /* MainView.swift */; };
 		68BD3F8B27EDD91D00676EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BD3F8A27EDD91D00676EA7 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68BA2031281B2492004A6933 /* UTM-Templates-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UTM-Templates-Info.plist"; sourceTree = SOURCE_ROOT; };
 		68BD3F8327EDD91C00676EA7 /* UTM Templates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTM Templates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTM_TemplatesApp.swift; sourceTree = "<group>"; };
 		68BD3F8827EDD91C00676EA7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BA2030281B23A2004A6933 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 		68BD3F8527EDD91C00676EA7 /* UTM Templates */ = {
 			isa = PBXGroup;
 			children = (
+				68BA2031281B2492004A6933 /* UTM-Templates-Info.plist */,
 				68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */,
 				68BD3F8827EDD91C00676EA7 /* MainView.swift */,
 				68BD3F9A27EDDCB600676EA7 /* DetailView.swift */,
@@ -97,6 +101,9 @@
 			dependencies = (
 			);
 			name = "UTM Templates";
+			packageProductDependencies = (
+				68BA202F281B23A2004A6933 /* Sparkle */,
+			);
 			productName = "UTM Templates";
 			productReference = 68BD3F8327EDD91C00676EA7 /* UTM Templates.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 68BD3F7A27EDD91C00676EA7;
+			packageReferences = (
+				68BA202E281B23A2004A6933 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 68BD3F8427EDD91C00676EA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,6 +302,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UTM-Templates-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UTM-Templates-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68BA202E281B23A2004A6933 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68BA202F281B23A2004A6933 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68BA202E281B23A2004A6933 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		68BD3F9127EDD91D00676EA7 /* UTM_Templates.xcdatamodeld */ = {

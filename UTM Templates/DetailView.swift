@@ -40,6 +40,7 @@ struct DetailView: View {
                 if let json = try? JSONSerialization.jsonObject(with: data) as? [String:Any] {
                     if let size = json["size"] as? Int {
                         vm_size = size
+                        attributes.append(VMAttribute(key: "Size", value: humanReadableByteCount(bytes: vm_size)))
                     }
                 }
             }
@@ -67,10 +68,11 @@ struct DetailView: View {
                         NSWorkspace.shared.open(url)
                     }
                 }) {
-                    Text("Download VM (\(humanReadableByteCount(bytes: vm_size)))")
+                    Text("Download VM")
                         .padding(8)
                         .background(Color.blue)
                         .cornerRadius(5)
+                        .foregroundColor(.white)
                 }
                 .buttonStyle(.plain)
             }
