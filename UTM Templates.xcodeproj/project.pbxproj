@@ -15,6 +15,7 @@
 		68BD3F9027EDD91D00676EA7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8F27EDD91D00676EA7 /* Persistence.swift */; };
 		68BD3F9327EDD91D00676EA7 /* UTM_Templates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F9127EDD91D00676EA7 /* UTM_Templates.xcdatamodeld */; };
 		68BD3F9B27EDDCB600676EA7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F9A27EDDCB600676EA7 /* DetailView.swift */; };
+		68E71FDA281C6ABC00AA01DC /* MarkdownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */; };
 		68F0ED0A27EDE91700E8977A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F0ED0927EDE91700E8977A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		68BD3F9227EDD91D00676EA7 /* UTM_Templates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UTM_Templates.xcdatamodel; sourceTree = "<group>"; };
 		68BD3F9427EDD91D00676EA7 /* UTM_Templates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UTM_Templates.entitlements; sourceTree = "<group>"; };
 		68BD3F9A27EDDCB600676EA7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTest.swift; sourceTree = "<group>"; };
 		68F0ED0927EDE91700E8977A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				68BD3F8827EDD91C00676EA7 /* MainView.swift */,
 				6823B643281C3E420092F863 /* VM.swift */,
 				68BD3F9A27EDDCB600676EA7 /* DetailView.swift */,
+				68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */,
 				68BD3F8A27EDD91D00676EA7 /* Assets.xcassets */,
 				68BD3F8F27EDD91D00676EA7 /* Persistence.swift */,
 				68BD3F9427EDD91D00676EA7 /* UTM_Templates.entitlements */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E71FDA281C6ABC00AA01DC /* MarkdownTest.swift in Sources */,
 				68BD3F9027EDD91D00676EA7 /* Persistence.swift in Sources */,
 				68BD3F8927EDD91C00676EA7 /* MainView.swift in Sources */,
 				68BD3F9327EDD91D00676EA7 /* UTM_Templates.xcdatamodeld in Sources */,

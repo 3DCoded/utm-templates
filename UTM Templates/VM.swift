@@ -30,9 +30,9 @@ struct VirtualMachine: Identifiable {
     var attributes: [VMAttribute] = []
     var instructions: String = ""
     var image: String = ""
-    var verified: Bool = false
+    var verified: Bool? = nil
     
-    init(title: String, link: String, attributes: [VMAttribute] = [], instructions: String = "", image: String = "", verified: Bool = false) {
+    init(title: String, link: String, attributes: [VMAttribute] = [], instructions: String = "", image: String = "", verified: Bool? = nil) {
         self.id = UUID()
         self.title = title
         self.link = link
@@ -141,14 +141,14 @@ let officialVirtualMachines: [VirtualMachine] = [
         attributes: [VMAttribute(key: "Memory", value: "1GB"),
                      VMAttribute(key: "Disk", value: "20GB"),
                      VMAttribute(key: "SPICE Guest Tools", value: "Installed")],
-        instructions: "", image: "windows-9x"),
+        instructions: "This Virtual Machine needs a Windows 7 installation ISO. A good working image is [en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso](https://archive.org/download/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332_202006/en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso) with the SHA1 hash of *36ae90defbad9d9539e649b193ae573b77a71c83*.\nAfter you have downloaded the ISO, select the ISO as the startup disk. Start the VM and go through the installation process. When you are done, download the [SPICE tools ISO](https://github.com/utmapp/qemu/releases/download/v6.2.0-utm/spice-guest-tools-0.164.3.iso). Eject the Windows installation ISO and select the SPICE tools ISO. Run through the installer in the *(D:) QEMU* drive.", image: "windows-9x"),
     VirtualMachine(
         title: "Windows XP",
         link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnB6ZkZEVVFHUXZOd3ZFZWc_ZT1HUU1CZjE/root",
         attributes: [VMAttribute(key: "Memory", value: "512MB"),
                      VMAttribute(key: "Disk", value: "20GB"),
                      VMAttribute(key: "SPICE Guest Tools", value: "Installed")],
-        instructions: "", image: "windows-xp"),
+        instructions: "This Virtual Machine needs a Windows XP installation ISO. A good working image is [en_windows_xp_professional_sp3_Nov_2013_Incl_SATA_Drivers.iso](https://archive.org/download/WIndows-XP-Professional-SP3/en_windows_xp_professional_sp3_Nov_2013_Incl_SATA_Drivers.iso) with the SHA1 hash of *6947e45f7eb50c873043af4713aa7cd43027efa7*.\nAfter you have downloaded the ISO, select the ISO as the startup disk. Start the VM and go through the installation process. When you are done, download the [SPICE tools ISO](https://github.com/utmapp/qemu/releases/download/v6.2.0-utm/spice-guest-tools-0.164.3.iso). Eject the Windows installation ISO and select the SPICE tools ISO. Run through the installer in the *(D:) QEMU* drive.", image: "windows-xp"),
 ]
 
 
@@ -212,22 +212,22 @@ var communityUploadedVirtualMachines: [VirtualMachine] = [
         title: "Windows 9",
         link: "",
         attributes: [],
-        instructions: "",
+        instructions: "This is a dummy VM. It doesn't actually work.",
         image: "windows",
         verified: true),
     VirtualMachine(
         title: "Windows 9X",
         link: "",
         attributes: [],
-        instructions: "",
+        instructions: "This is a dummy VM. It doesn't actually work.",
         image: "windows",
         verified: false)
 ]
 
 var verifiedCommunityUploadedVirtualMachines: [VirtualMachine] {
-    return communityUploadedVirtualMachines.filter { $0.verified }
+    return communityUploadedVirtualMachines.filter { $0.verified != false }
 }
 
 var unverifiedCommunityUploadedVirtualMachines: [VirtualMachine] {
-    return communityUploadedVirtualMachines.filter { !$0.verified }
+    return communityUploadedVirtualMachines.filter { $0.verified == false }
 }
