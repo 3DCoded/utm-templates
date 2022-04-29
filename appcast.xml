@@ -11,5 +11,12 @@
             <enclosure url="https://github.com/smattar2020/utm-templates/suites/6304352117/artifacts/226082048" length="2530000" type="application/octet-stream" />
         </item>
         <link>https://github.com/smattar2020/utm-templates</link>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 28 Apr 2022 3:54:44 -0500</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
     </channel>
 </rss>
