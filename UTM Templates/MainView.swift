@@ -12,6 +12,8 @@ struct MainView: View {
     
     @Environment(\.openURL) var openURL
     
+    @State var showWarning = [false]
+    
     var body: some View {
         NavigationView {
             List {
@@ -140,6 +142,53 @@ struct MainView: View {
                             Text("Sun Solaris 9")
                         }
                     }
+                    NavigationLink(destination: {
+                        DetailView(title: "Ubuntu 14.04", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnA3TF9INS1md0ZLb0JXc1E_ZT02SGxKRXQ/root", attributes: [
+                            VMAttribute(key: "Memory", value: "512MB"),
+                            VMAttribute(key: "Disk", value: "10GB"),
+                            VMAttribute(key: "Username", value: "ubuntu"),
+                            VMAttribute(key: "Password", value: "ubuntu"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("ubuntu")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Ubuntu 14.04")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "Windows 7", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnB5S055OF9zYm1qRG1UVlE_ZT1UbDdncnM/root", attributes: [
+                            VMAttribute(key: "Memory", value: "1GB"),
+                            VMAttribute(key: "Disk", value: "20GB"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("windows-9x")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Windows 7")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "Windows XP", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnB6ZkZEVVFHUXZOd3ZFZWc_ZT1HUU1CZjE/root", attributes: [
+                            VMAttribute(key: "Memory", value: "512MB"),
+                            VMAttribute(key: "Disk", value: "20GB"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("windows-xp")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Windows XP")
+                        }
+                    }
                 }
                 Section(header: Text("Original")) {
                     NavigationLink(destination: {
@@ -234,7 +283,27 @@ struct MainView: View {
                     }
                 }
                 Section(header: Text("Community Uploaded")) {
-                    
+                    NavigationLink(destination: Text("Unverified VM (install at your own risk)")) {
+                        HStack {
+                            Image("warning")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                                .help(Text("This VM has not been checked for viruses or corruption yet. Install at your own risk."))
+//                                .onHover { show in
+//                                    showWarning[0] = show
+//                                }
+//                                .popover(isPresented: $showWarning[0]) {
+//                                    Text("This VM has not been checked for viruses or corruption yet. Install at your own risk.")
+//                                        .padding()
+//                                }
+                            Image("kubuntu")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Unverified VM (no this is not a glitch)")
+                        }
+                    }
                 }
             }
             .navigationTitle("UTM Templates")
