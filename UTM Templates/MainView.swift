@@ -52,7 +52,7 @@ struct MainView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 20)
-                            Text("Debian ARM 10.4 LDXE")
+                            Text("Debian ARM 10.4 i3")
                         }
                     }
                     NavigationLink(destination: {
@@ -71,11 +71,77 @@ struct MainView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 20)
-                            Text("Debian ARM 10.4 i3")
+                            Text("Debian ARM 10.4 LDXE")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "Debian ARM 10.4 XFCE", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnA2dTdFZVBkRS1IN2N6akE_ZT1KRExWdzQ/root", attributes: [
+                            VMAttribute(key: "Memory", value: "512MB"),
+                            VMAttribute(key: "Disk", value: "20GB"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Not Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("debian")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Debian ARM 10.4 XFCE")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "macOS 9.2.1", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnAxVHAzTlNGSHJIMGZMd3c_ZT1NTlR4ejY/root", attributes: [
+                            VMAttribute(key: "Memory", value: "1GB"),
+                            VMAttribute(key: "Disk", value: "10GB"),
+                            VMAttribute(key: "Username", value: "debian"),
+                            VMAttribute(key: "Password", value: "debian"),
+                            VMAttribute(key: "Root Username", value: "root"),
+                            VMAttribute(key: "Root Password", value: "password"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Not Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("mac")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("macOS 9.2.1")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "ReactOS 0.4.14", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnAyenM5NEY2TXZGU3hITHc_ZT1lSGlsS1c/root", attributes: [
+                            VMAttribute(key: "Memory", value: "512MB"),
+                            VMAttribute(key: "Disk", value: "10GB"),
+                            VMAttribute(key: "Root Username", value: "Administrator"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Not Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("linux")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("ReactOS 0.4.14")
+                        }
+                    }
+                    NavigationLink(destination: {
+                        DetailView(title: "Sun Solaris 9", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdnA0SzFZclphYzFydWpGOVE_ZT1sU21wdkY/root", attributes: [
+                            VMAttribute(key: "Memory", value: "256MB"),
+                            VMAttribute(key: "Disk", value: "8GB"),
+                            VMAttribute(key: "Root Username", value: "root"),
+                            VMAttribute(key: "SPICE Guest Tools", value: "Not Installed")
+                        ])
+                    }) {
+                        HStack {
+                            Image("solaris")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20)
+                            Text("Sun Solaris 9")
                         }
                     }
                 }
-                Section(header: Text("Custom")) {
+                Section(header: Text("Original")) {
                     NavigationLink(destination: {
                         DetailView(title: "Windows 10", link: "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbzNpSVRXZV9FWmdwdElidHBEQV8tVmk4NlJhTmc_ZT1nZFFiUlo/root", attributes: [
                             VMAttribute(key: "Memory", value: "8GB"),

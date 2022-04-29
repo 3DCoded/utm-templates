@@ -40,7 +40,7 @@ struct DetailView: View {
                 if let json = try? JSONSerialization.jsonObject(with: data) as? [String:Any] {
                     if let size = json["size"] as? Int {
                         vm_size = size
-                        attributes.append(VMAttribute(key: "Size", value: humanReadableByteCount(bytes: vm_size)))
+                        attributes.append(VMAttribute(key: "Compressed Size", value: humanReadableByteCount(bytes: vm_size)))
                     }
                 }
             }
