@@ -1,0 +1,9 @@
+name: Pull
+on: [pull_request]
+jobs:
+  Pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: list pull
+        run: ls {{ github.workspace }}
