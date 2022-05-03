@@ -1,7 +1,5 @@
 # UTM Templates
 
-# NOTICE. UTM Templates is now available in a fork of UTM available at [smattar2020/UTM](https://github.com/smattar2020/UTM)
-
 ### A few free preinstalled templates for use with UTM on Mac with Apple Silicon.
 
 ## Usage
