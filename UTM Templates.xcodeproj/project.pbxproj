@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6823B644281C3E420092F863 /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823B643281C3E420092F863 /* VM.swift */; };
+		6831E164281C9D3500E2C7FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6831E163281C9D3500E2C7FE /* SettingsView.swift */; };
 		68BD3F8727EDD91C00676EA7 /* UTM_TemplatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */; };
 		68BD3F8927EDD91C00676EA7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8827EDD91C00676EA7 /* MainView.swift */; };
 		68BD3F8B27EDD91D00676EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BD3F8A27EDD91D00676EA7 /* Assets.xcassets */; };
@@ -15,12 +16,14 @@
 		68BD3F9027EDD91D00676EA7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F8F27EDD91D00676EA7 /* Persistence.swift */; };
 		68BD3F9327EDD91D00676EA7 /* UTM_Templates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F9127EDD91D00676EA7 /* UTM_Templates.xcdatamodeld */; };
 		68BD3F9B27EDDCB600676EA7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3F9A27EDDCB600676EA7 /* DetailView.swift */; };
-		68E71FDA281C6ABC00AA01DC /* MarkdownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */; };
+		68E16ED6281C85680058FAFB /* Version in Frameworks */ = {isa = PBXBuildFile; productRef = 68E16ED5281C85680058FAFB /* Version */; };
 		68F0ED0A27EDE91700E8977A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F0ED0927EDE91700E8977A /* HomeView.swift */; };
+		68F53795281C8C8900A3E67A /* VersionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F53794281C8C8900A3E67A /* VersionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6823B643281C3E420092F863 /* VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VM.swift; sourceTree = "<group>"; };
+		6831E163281C9D3500E2C7FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		68BA2031281B2492004A6933 /* UTM-Templates-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UTM-Templates-Info.plist"; sourceTree = SOURCE_ROOT; };
 		68BD3F8327EDD91C00676EA7 /* UTM Templates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTM Templates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTM_TemplatesApp.swift; sourceTree = "<group>"; };
@@ -31,8 +34,8 @@
 		68BD3F9227EDD91D00676EA7 /* UTM_Templates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UTM_Templates.xcdatamodel; sourceTree = "<group>"; };
 		68BD3F9427EDD91D00676EA7 /* UTM_Templates.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UTM_Templates.entitlements; sourceTree = "<group>"; };
 		68BD3F9A27EDDCB600676EA7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTest.swift; sourceTree = "<group>"; };
 		68F0ED0927EDE91700E8977A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		68F53794281C8C8900A3E67A /* VersionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E16ED6281C85680058FAFB /* Version in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,16 +71,17 @@
 			children = (
 				68BA2031281B2492004A6933 /* UTM-Templates-Info.plist */,
 				68BD3F8627EDD91C00676EA7 /* UTM_TemplatesApp.swift */,
+				6831E163281C9D3500E2C7FE /* SettingsView.swift */,
+				68F53794281C8C8900A3E67A /* VersionController.swift */,
 				68BD3F8827EDD91C00676EA7 /* MainView.swift */,
+				68F0ED0927EDE91700E8977A /* HomeView.swift */,
 				6823B643281C3E420092F863 /* VM.swift */,
 				68BD3F9A27EDDCB600676EA7 /* DetailView.swift */,
-				68E71FD9281C6ABC00AA01DC /* MarkdownTest.swift */,
 				68BD3F8A27EDD91D00676EA7 /* Assets.xcassets */,
 				68BD3F8F27EDD91D00676EA7 /* Persistence.swift */,
 				68BD3F9427EDD91D00676EA7 /* UTM_Templates.entitlements */,
 				68BD3F9127EDD91D00676EA7 /* UTM_Templates.xcdatamodeld */,
 				68BD3F8C27EDD91D00676EA7 /* Preview Content */,
-				68F0ED0927EDE91700E8977A /* HomeView.swift */,
 			);
 			path = "UTM Templates";
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			);
 			name = "UTM Templates";
 			packageProductDependencies = (
+				68E16ED5281C85680058FAFB /* Version */,
 			);
 			productName = "UTM Templates";
 			productReference = 68BD3F8327EDD91C00676EA7 /* UTM Templates.app */;
@@ -136,6 +142,7 @@
 			);
 			mainGroup = 68BD3F7A27EDD91C00676EA7;
 			packageReferences = (
+				68E16ED4281C85680058FAFB /* XCRemoteSwiftPackageReference "Version" */,
 			);
 			productRefGroup = 68BD3F8427EDD91C00676EA7 /* Products */;
 			projectDirPath = "";
@@ -163,11 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E71FDA281C6ABC00AA01DC /* MarkdownTest.swift in Sources */,
 				68BD3F9027EDD91D00676EA7 /* Persistence.swift in Sources */,
 				68BD3F8927EDD91C00676EA7 /* MainView.swift in Sources */,
 				68BD3F9327EDD91D00676EA7 /* UTM_Templates.xcdatamodeld in Sources */,
+				6831E164281C9D3500E2C7FE /* SettingsView.swift in Sources */,
 				68F0ED0A27EDE91700E8977A /* HomeView.swift in Sources */,
+				68F53795281C8C8900A3E67A /* VersionController.swift in Sources */,
 				68BD3F9B27EDDCB600676EA7 /* DetailView.swift in Sources */,
 				6823B644281C3E420092F863 /* VM.swift in Sources */,
 				68BD3F8727EDD91C00676EA7 /* UTM_TemplatesApp.swift in Sources */,
@@ -314,7 +322,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "smattar2020.UTM-Templates";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -345,7 +353,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "smattar2020.UTM-Templates";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -375,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68E16ED4281C85680058FAFB /* XCRemoteSwiftPackageReference "Version" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mrackwitz/Version.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68E16ED5281C85680058FAFB /* Version */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68E16ED4281C85680058FAFB /* XCRemoteSwiftPackageReference "Version" */;
+			productName = Version;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		68BD3F9127EDD91D00676EA7 /* UTM_Templates.xcdatamodeld */ = {

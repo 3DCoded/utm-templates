@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Version
 
 @main
 struct UTM_TemplatesApp: App {
@@ -14,6 +15,15 @@ struct UTM_TemplatesApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .onAppear {
+                    print(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)
+                }
+        }
+        Settings {
+            Button("Check for updates... (not working yet)") {
+                VersionController.shared.check()
+            }
+            .padding()
         }
     }
 }
